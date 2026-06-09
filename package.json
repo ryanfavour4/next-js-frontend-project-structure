@@ -3,19 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm generate:icons && next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "generate:icons": "node scripts/generate-icons.js",
-    "postinstall": "pnpm generate:icons"
+    "lint": "eslint"
   },
   "dependencies": {
-    "@iconify/icons-line-md": "^1.2.30",
     "@iconify/react": "^6.0.2",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,7 +22,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
-    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }
